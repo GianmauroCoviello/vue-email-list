@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="app">
+        
+        <ul>
+            <!-- ciclo che riproduce a video 10 list item con le rispettive mail random -->
+            <li v-for="(email) in randomMail ">{{email}}</li>
+        </ul>
+
+    </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <!-- link per la libreria axios -->
