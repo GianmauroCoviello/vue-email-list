@@ -7,8 +7,8 @@
 </head>
 <body>
     <div id="app">
-        
-        <ul>
+        <!-- condizione che riproduce a video le 10 random email solamente quanto si sono create tutte (bonus) -->
+        <ul v-if="randomMail.length === 10">
             <!-- ciclo che riproduce a video 10 list item con le rispettive mail random -->
             <li v-for="(email) in randomMail ">{{email}}</li>
         </ul>
